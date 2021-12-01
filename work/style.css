@@ -1,0 +1,258 @@
+body{
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    line-height: 1.6;
+    color: #6c7279;
+}
+*,
+*:before,
+*:after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+width: 80%;
+margin: none;
+display: flex;
+justify-content: space-between;
+text-align: start;
+}
+
+.keys{
+    width: 100%;
+	display:flex;
+    height: 100%;
+	background:	rgb(150, 14, 14);
+    align-items: center;
+    justify-content: center;
+}
+
+.key_big{
+
+    font-size: 30px;
+    height: 100%;
+    display: flex;
+    padding: 20px 41px;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+.key{
+    font-size: 20px;
+    height: 100%;
+    display: flex;
+    padding: 30px 100px;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.key:hover, .key:focus{
+    background: rgb(88, 88, 88);
+}
+
+.page{
+	display: flex;
+	background: white;
+	width: 100%;
+	height: 100%;
+	margin-top: 20px;
+	padding: 15px;
+}
+
+.section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    width: 50%;
+}
+
+.section img{
+    padding: 20px 0px;
+    max-height: 400px;
+    max-width: 100%;
+    width: 100%;
+}
+
+.footer{
+    width: 100%;
+	display: flex;
+    padding: 5px 0px;
+	background:	rgb(150, 14, 14);
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.footer p{
+    font-size: 20px;
+}
+.url{
+    font-size: 10px;
+    color: white;
+    width: 100%;
+    text-align: center;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.ico{
+    font-size: 20px;
+    color: #6c7279;
+    transition: all .3s ease 0s;
+}
+.top_block{
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    padding: 1%;
+}
+    .text_top_block{
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+    }
+    .image img{
+        max-height: 300px;
+        height: 100%;
+        width: 100%;
+        position:relative;
+    }
+.ico{
+    display: flex;
+    justify-content: center;
+}
+.icon{
+    width: 60px;
+    height: 60px;
+}
+
+.back_to_top {
+    width: 50px;
+    height: 45px;
+    position: fixed; 
+    color: #fff; 
+    background-color: #ffffff; 
+    opacity: .4;
+    right: 6%;
+    bottom: 20px; 
+    padding: 4px 10px; 
+    font-size: 20px; 
+    border-radius: 15px;
+    cursor: pointer; 
+    display: flex;
+    text-align: center;
+  }
+.back_to_top:hover {
+    background-color: rgb(150, 14, 14); 
+  }
+  .dropdown{
+    list-style-type: none;
+    display: none;
+
+}
+.drop:hover .dropdown, .drop:active .dropdown{
+    display: block;
+}
+.drop:hover .key , .dropdown:active .key{
+    padding: 7px 15px;
+    background: rgb(150, 14, 14);
+    color: #6c7279;
+}
+.drop:hover .key_big , .dropdown:active .key_big{
+    padding: 10px 20px;
+}
+.list:hover{
+    text-decoration: underline;
+}
+
+.filterDiv {
+    display: none; 
+    float: left;
+  }
+
+.show {
+    display: block;
+  }
+
+.btn {
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    background-color: rgb(150, 14, 14);
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #ddd;
+}
+
+.btn.active {
+    background-color: #666;
+    color: white;
+  }
+
+  h1{
+    font-size: 31px;
+    z-index: 10;
+}
+  
+  
+
+
+
+@media screen and (max-width:457px) {
+    .key_big{
+        font-size: 21px;
+        padding: 20px 0px;
+    }
+    h1{
+        font-size: 31px;
+
+    }
+    .icon {
+        width: 46px;
+        height: 60px;
+    }
+    .footer p {
+        font-size: 12px;
+    }
+    .icon {
+        width: 32px;
+    }
+    .ico {
+        margin-bottom: -5%;
+    }
+    .page {
+        display: flex;
+        flex-direction: column;
+    }.section {
+        width: 100%;
+    }
+    .text_top_block {
+        width: 100%;
+    }
+    .top_block {
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media screen and (max-width:520px) {
+    .top_block {
+        display: flex;
+        flex-direction: column;
+    }
+    .text_top_block {
+        width: 100%;
+    }
+    h1{
+        font-size: 31px;
+        z-index: 10;
+    }
+}
+
+
+
